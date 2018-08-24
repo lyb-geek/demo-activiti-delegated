@@ -61,6 +61,7 @@ public class DelegateMain {
 				System.out.println("请输入委托对象...");
 				String delegateUser = scanner.nextLine();
 				ActUtils.delegate(task.getId(), delegateUser);
+				// taskService.complete(task.getId());
 				ActUtils.completeTask(task.getId(), null);
 			}
 		}
